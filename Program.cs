@@ -8,5 +8,11 @@ class Program
     {
         DateTime dateTime = DateTime.Now;
         dateTime.Print();
+
+        Console.WriteLine(dateTime.isDayOfWeek(DayOfWeek.Wednesday));
+        if (dateTime.isDayOfWeek(DayOfWeek.Wednesday))
+        {
+            Console.WriteLine("Сегодня начнем работать");
+        }
     }
 }
