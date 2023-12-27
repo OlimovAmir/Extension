@@ -1,6 +1,7 @@
 ﻿using Extension;
 using System;
 using System.Collections.Generic;
+using Extension_student;
 
 class Program
 {
@@ -14,5 +15,11 @@ class Program
         {
             Console.WriteLine("Сегодня начнем работать");
         }
+
+        Extension_student.Student student = new Extension_student.Student() { lastName = "Amir", firsName= "Olimov" };
+
+        string fullName = student.GetFullName();
+        Console.WriteLine(fullName);
+
     }
 }

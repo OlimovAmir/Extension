@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Extension_student;
 
 namespace Extension
 {
@@ -17,5 +18,11 @@ namespace Extension
         {
             return dateTime.DayOfWeek == dayOfWeek;
         }
+
+        public static string GetFullName(this Student student) 
+        {
+            return student.firsName + " " + student.lastName;
+        }
+
     }
 }
